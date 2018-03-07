@@ -1,28 +1,49 @@
-install pipenv
+### Environment Setting
+
+#### install pipenv
 ```
-sudo pip install pipenv
+sudo pip3 install pipenv
 ```
 
 
-install environment
+#### install virtual environment
 ```
 pipenv --three
 ```
 
-install package( install django package)
+#### install package(install package of django's name)
 ```
 pipenv install django
 ```
 
-run envy
+#### run envy
 ```
 pipenv shell
 ```
 
-pip install is global
-pipenv install is env
+- pip install is global
+- pipenv install is env
 
-install cookiecutter
+#### install cookiecutter and make django use template
 ```
-sudo pip install cookiecutter
+sudo pip3 install cookiecutter
+pipenv shell
+cookiecutter https://github.com/pydanny/cookiecutter-django
+```
+
+#### install needed django package part
+```
+pipenv shell
+pipenv install -r requirements/local.txt
+```
+
+#### install postgresql and run
+```
+sudo apt-get install postgresql
+psql -h 127.0.0.1 -U postgres template1
+```
+
+#### create app
+```
+django-admin startapp images
 ```
