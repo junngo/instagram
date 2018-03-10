@@ -43,7 +43,20 @@ sudo apt-get install postgresql
 psql -h 127.0.0.1 -U postgres template1
 ```
 
+### start django
+
 #### create app
 ```
 django-admin startapp images
+```
+
+#### db, make migrations
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+#### create super user
+```
+python manage.py createsuperuser
 ```
