@@ -67,6 +67,7 @@ THIRD_PARTY_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'rest_framework',           # REST framework
 ]
 LOCAL_APPS = [
     'instagram.users.apps.UsersConfig',

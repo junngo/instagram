@@ -60,3 +60,9 @@ python manage.py migrate
 ```
 python manage.py createsuperuser
 ```
+
+#### install djangorestframework to make django api
+```
+pipenv shell
+pipenv install djangorestframework
+```
