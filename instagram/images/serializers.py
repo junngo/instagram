@@ -3,18 +3,6 @@ from . import models
 from instagram.users import models as user_models
 
 
-class CommentSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = models.Comment
-        fields = '__all__'
-
-class LikeSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = models.Like
-        fields = '__all__'
-
 class FeedUserSerializer(serializers.ModelSerializer):
 
     class Meta:
@@ -25,6 +13,27 @@ class FeedUserSerializer(serializers.ModelSerializer):
         )
 
 
+class CommentSerializer(serializers.ModelSerializer):
+
+    creator = FeedUserSerializer()
+
+    class Meta:
+        model = models.Comment
+        #fields = '__all__'
+        fields = (
+            'id',
+            'message',
+            'creator'
+        )
+
+
+class LikeSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = models.Like
+        fields = '__all__'
+
+
 class ImageSerializer(serializers.ModelSerializer):
 
     # default name
@@ -32,7 +41,7 @@ class ImageSerializer(serializers.ModelSerializer):
     # like_set = LikeSerializer(many=True)
 
     comments = CommentSerializer(many=True)
-    likes = LikeSerializer(many=True)
+    #likes = LikeSerializer(many=True) -> to use like_count
     creator = FeedUserSerializer()
 
 
@@ -45,6 +54,6 @@ class ImageSerializer(serializers.ModelSerializer):
             'location',
             'caption',
             'comments',
-            'likes',
+            'like_count',
             'creator'
         )
