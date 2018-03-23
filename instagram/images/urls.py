@@ -10,7 +10,8 @@ urlpatterns = [
         name = 'feed'
     ),
     url(
-        regex = r'(?P<image_id>\w+)/like/',
+        #(?P<var_name>regx)
+        regex = r'(?P<image_id>[0-9]+)/like/',
         view = views.LikeImage.as_view(),
         name='like_image'
     )
