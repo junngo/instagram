@@ -11,10 +11,16 @@ urlpatterns = [
     ),
     url(
         #(?P<var_name>regx)
-        regex = r'(?P<image_id>[0-9]+)/likes/$',
+        regex = r'(?P<image_id>[0-9]+)/like/$',
         view = views.LikeImage.as_view(),
         name='like_image'
     ),
+    url(
+        #(?P<var_name>regx)
+        regex = r'(?P<image_id>[0-9]+)/unlike/$',
+        view = views.UnLikeImage.as_view(),
+        name='like_image'
+        ),
     url(
         regex = r'(?P<image_id>[0-9]+)/comments/$',
         view = views.CommentOnImage.as_view(),
