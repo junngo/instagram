@@ -103,6 +103,7 @@ class CommentOnImage(APIView):
         else:
             return Response(data=serializer.errors,status=status.HTTP_400_BAD_REQUEST)
 
+
 class Comment(APIView):
     def delete(self, request, comment_id, format=None):
 
@@ -116,3 +117,10 @@ class Comment(APIView):
 
         except models.Comment.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
+
+
+class Search(APIView):
+
+    def get(self, request, format=None):
+
+        hashtags = request.query_params.get('hashtags', None)

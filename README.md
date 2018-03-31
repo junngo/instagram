@@ -66,3 +66,13 @@ python manage.py createsuperuser
 pipenv shell
 pipenv install djangorestframework
 ```
+
+#### install taggit (Tags for the photos)
+```
+pipenv install django-taggit
+```
+Add 'taggit' at THIRD_PARTY_APPS of setting file(base.py)
+```
+python manage.py migrate
+```
+Wrtie at models.py "from taggit.managers import TaggableManager"
