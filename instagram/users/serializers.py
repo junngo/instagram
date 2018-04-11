@@ -5,10 +5,14 @@ from instagram.images import serializers as image_serializers
 class UserProfileSerializer(serializers.ModelSerializer):
 
     images = image_serializers.CountImageSerializer(many=True)
+    post_count = serializers.ReadOnlyField()
+    followers_count = serializers.ReadOnlyField()
+    following_count = serializers.ReadOnlyField()
 
     class Meta:
         model = models.User
         fields = (
+            'profile_image',
             'username',
             'name',
             'bio',
@@ -18,6 +22,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
             'following_count',
             'images' # If image serializer is not, just you can see image id
         )
+
 
 class ListUserSerializer(serializers.ModelSerializer):
 
