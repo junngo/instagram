@@ -76,3 +76,13 @@ Add 'taggit' at THIRD_PARTY_APPS of setting file(base.py)
 python manage.py migrate
 ```
 Wrtie at models.py "from taggit.managers import TaggableManager"
+
+install jwt
+```
+pipenv install djangorestframework-jwt
+```
+
+write usage to base.py
+```
+http://getblimp.github.io/django-rest-framework-jwt/
+```
