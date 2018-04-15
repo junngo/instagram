@@ -87,3 +87,8 @@ write usage to base.py
 ```
 http://getblimp.github.io/django-rest-framework-jwt/
 ```
+
+install django-rest-auth for logging
+```
+pipenv install django-rest-auth
+```
