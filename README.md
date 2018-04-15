@@ -70,6 +70,7 @@ pipenv install djangorestframework
 #### install taggit (Tags for the photos)
 ```
 pipenv install django-taggit
+pipenv install django-taggit-serializer
 ```
 Add 'taggit' at THIRD_PARTY_APPS of setting file(base.py)
 ```
