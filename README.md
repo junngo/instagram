@@ -105,7 +105,13 @@ cd frontend
 yarn start
 ```
 
-#### eject for use webpack
+#### eject to use webpack
+```
+cd frontend
+yarn eject
 ```
 
+#### install node-sass and loader to use scss
+```
+yarn add node-sass sass-loader
 ```
