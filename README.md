@@ -115,3 +115,8 @@ yarn eject
 ```
 yarn add node-sass sass-loader
 ```
+
+#### accept to approach from port 3000(react) to port 8000(django)
+```
+pipenv install django-cors-headers
+```
