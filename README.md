@@ -120,3 +120,9 @@ yarn add node-sass sass-loader
 ```
 pipenv install django-cors-headers
 ```
+
+#### install redux in our project
+```
+cd front
+yarn add redux react-redux
+```
