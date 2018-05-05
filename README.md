@@ -126,3 +126,9 @@ pipenv install django-cors-headers
 cd front
 yarn add redux react-redux
 ```
+
+#### install redux middlewares thunk
+when I want to send action, I send action. (not immediately)
+```
+yarn add redux-thunk
+```
