@@ -132,3 +132,8 @@ when I want to send action, I send action. (not immediately)
 ```
 yarn add redux-thunk
 ```
+
+#### add logger to dev, not global
+```
+yarn add redux-logger --dev
+```
