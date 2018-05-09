@@ -137,3 +137,14 @@ yarn add redux-thunk
 ```
 yarn add redux-logger --dev
 ```
+
+#### add react router
+```
+create-react-app react-router-contact-list
+yarn add react-router-dom
+```
+
+#### syncing react router with redux
+```
+yarn add react-router-dom react-router-redux@next history
+```
