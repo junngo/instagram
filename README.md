@@ -148,3 +148,9 @@ yarn add react-router-dom
 ```
 yarn add react-router-dom react-router-redux@next history
 ```
+
+#### debugging redux like a pro with reactotron
+```
+yarn add reactotron-react-js
+yarn add reactotron-redux
+```
