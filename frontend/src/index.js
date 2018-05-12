@@ -5,7 +5,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import store, { history } from "redux/configureStore"
 import 'index.css';
 import App from 'App';
-import "ReactotronConfig";
+//import "ReactotronConfig";
 
 ReactDOM.render(
   <Provider store={store}>

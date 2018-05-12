@@ -154,3 +154,8 @@ yarn add react-router-dom react-router-redux@next history
 yarn add reactotron-react-js
 yarn add reactotron-redux
 ```
+
+#### installing redux dev tools
+```
+yarn add redux-devtools-extension --dev
+```
