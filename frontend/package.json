@@ -44,6 +44,7 @@
     "reactotron-react-js": "^1.13.0",
     "reactotron-redux": "^1.13.0",
     "redux": "^4.0.0",
+    "redux-i18n": "^1.5.13",
     "redux-thunk": "^2.2.0",
     "resolve": "1.6.0",
     "sass-loader": "^7.0.1",

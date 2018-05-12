@@ -159,3 +159,8 @@ yarn add reactotron-redux
 ```
 yarn add redux-devtools-extension --dev
 ```
+
+#### multi language with redux
+```
+yarn add redux-i18n
+```
