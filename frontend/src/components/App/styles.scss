@@ -1,5 +1,9 @@
 @import "reset-css/reset.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
 
 body {
   background-color: $bg-color;
+  font-family: -apple-system, BlinkMacSystemFont, "Sego UI",
+   Roboto, Helvetica, Arial, sans-serif;
 }
