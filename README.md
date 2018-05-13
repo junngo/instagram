@@ -164,3 +164,8 @@ yarn add redux-devtools-extension --dev
 ```
 yarn add redux-i18n
 ```
+
+#### default css setting init(not overriding, all setting value 0)
+```
+yarn add reset-css
+```
