@@ -169,3 +169,8 @@ yarn add redux-i18n
 ```
 yarn add reset-css
 ```
+
+#### use the react icons
+```
+yarn add react-ionicons
+```
