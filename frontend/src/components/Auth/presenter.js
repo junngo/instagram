@@ -15,7 +15,7 @@ const Auth = (props, context) => (
     </div>
       <div className={styles.whiteBox}>
       {props.action === "login" && (
-                        <p>
+                        <p className={styles.text}>
                           Dont have an account?{" "}
                           <span
                             onClick={props.changeAction}
@@ -26,7 +26,7 @@ const Auth = (props, context) => (
                         </p>)
       }
       {props.action === "signup" && (
-                        <p>
+                        <p className={styles.text}>
                           Have an account?{" "}
                           <span
                             onClick={props.changeAction}
