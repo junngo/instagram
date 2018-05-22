@@ -174,3 +174,13 @@ yarn add reset-css
 ```
 yarn add react-ionicons
 ```
+#### to translate
+```
+// add package.json -> "extract": "i18n_extract"
+yarn extract
+// check the file that is template.pot
+// next methods
+// create se.po under locales
+// add package.json -> "import": "i18n_import --encoding=utf-8"
+yarn run import
+```

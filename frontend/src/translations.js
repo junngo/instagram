@@ -1,5 +1,18 @@
 export const translations = {
-  es: {
-    "Login in": "Iniciar Sesión"
-  }
-};
+  'es': {
+    'Sign up': '',
+    'Log in': 'Inciar SesIom',
+    'About Us': '',
+    'Support': '',
+    'Blog': '',
+    'Press': '',
+    'API': '',
+    'Jobs': '',
+    'Privacy': '',
+    'Terms': '',
+    'Directory': '',
+    'Language': 'Idioma',
+  },
+  'options': {
+  },
+}
