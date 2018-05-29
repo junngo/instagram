@@ -184,3 +184,8 @@ yarn extract
 // add package.json -> "import": "i18n_import --encoding=utf-8"
 yarn run import
 ```
+
+#### login in with facebook
+```
+yarn add react-facebook-login
+```
