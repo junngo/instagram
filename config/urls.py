@@ -21,11 +21,13 @@ urlpatterns = [
     url(r'^notifications/', include('instagram.notifications.urls', namespace='notifications')),
     url(r'^accounts/', include('allauth.urls')),
 
-    # catch-all-url
-    url(r'^', views.ReactAppView.as_view()),
-
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+urlpatterns += [
+    # catch-all-url
+    url(r'^', views.ReactAppView.as_view()),
+]
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit
