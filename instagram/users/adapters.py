@@ -10,8 +10,6 @@ class AccountAdapter(DefaultAccountAdapter):
 
     def save_user(self, request, user, form):
         if len(user.socialaccount_set.all()) == 0:
-            print(name)
-            print(email)
             name = request.data.get('name', None)
             email = request.data.get('email', None)
             username = request.data.get('username', None)
@@ -20,7 +18,7 @@ class AccountAdapter(DefaultAccountAdapter):
             user.name = name
             user.email = email
             user.username = username
-            
+
             if(password1 == password2):
                 user.set_password(password1)
             user.save()

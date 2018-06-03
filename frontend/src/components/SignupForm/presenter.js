@@ -24,6 +24,7 @@ const SignupForm = props => (
         type="email"
         placeholder="Email"
         className={formStyles.textInput}
+        value={props.emailValue}
         onChange={props.handleInputChange}
         name="email"
       />
@@ -31,13 +32,15 @@ const SignupForm = props => (
         type="text"
         placeholder="Full Name"
         className={formStyles.textInput}
+        value={props.nameValue}
         onChange={props.handleInputChange}
-        name="fullname"
+        name="name"
       />
       <input
         type="username"
         placeholder="Username"
         className={formStyles.textInput}
+        value={props.usernameValue}
         onChange={props.handleInputChange}
         name="username"
       />
@@ -45,6 +48,7 @@ const SignupForm = props => (
         type="password"
         placeholder="Password"
         className={formStyles.textInput}
+        value={props.passwordValue}
         onChange={props.handleInputChange}
         name="password"
       />
@@ -61,6 +65,10 @@ const SignupForm = props => (
 );
 
 SignupForm.propTypes = {
+  emailValue: PropTypes.string.isRequired,
+  nameValue: PropTypes.string.isRequired,
+  usernameValue: PropTypes.string.isRequired,
+  passwordValue: PropTypes.string.isRequired,
   handleInputChange: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   handleFacebookLogin: PropTypes.func.isRequired
