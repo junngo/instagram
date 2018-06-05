@@ -90,7 +90,7 @@ class UserProfile(APIView):
             return Response(status=status.HTTP_404_NOT_FOUND)
 
         elif found_user.username != user.username:
-            return Response(status=status.HTTP_401_UNAUTHORIZED)
+            return Response(status=status.HTTP_400_BAD_REQUEST)
 
         else:
             serializer = serializers.UserProfileSerializer(
