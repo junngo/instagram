@@ -1,4 +1,4 @@
-import React, { Component } form "react";
+import React, { Component } from "react";
 import PhotoActions from "./presenter";
 
 class Container extends Component {

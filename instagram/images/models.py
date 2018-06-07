@@ -1,6 +1,7 @@
 from django.db import models
 from taggit.managers import TaggableManager
 from instagram.users import models as user_models
+from django.contrib.humanize.templatetags.humanize import naturaltime
 
 # Create your models here.
 
@@ -28,6 +29,11 @@ class Image(TimeStampedModel):
     @property
     def comment_count(self):
         return self.comments.all().count()
+
+    @property
+    def natural_time(self):
+        return naturaltime(self.created_at)
+
 
     # representation
     def __str__(self):
