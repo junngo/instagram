@@ -4,8 +4,23 @@ import styles from "./styles.scss";
 
 const FeedPhoto = (props, context) => {
   console.log(props);
-  return <div className = {styles.FeedPhoto}>hello</div>;
-}
+  return (
+    <div className = {styles.FeedPhoto}>
+      <header>
+      <img
+        src={props.creator.profile_image || require("images/noPhoto.jpg")}
+        alt={props.creator.username}
+      />
+        <div>
+          <span>{props.creator.username}</span>
+          <span>{props.location}</span>
+        </div>
+      </header>
+      <img src ={props.file} alt={props.caption} />
+    </div>
+  );
+
+};
 
 FeedPhoto.propTypes = {
   creator: PropTypes.shape({
