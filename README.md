@@ -174,6 +174,7 @@ yarn add reset-css
 ```
 yarn add react-ionicons
 ```
+
 #### to translate
 ```
 // add package.json -> "extract": "i18n_extract"
@@ -188,4 +189,9 @@ yarn run import
 #### login in with facebook
 ```
 yarn add react-facebook-login
+```
+
+#### Making the comments resizeable
+```
+yarn add react-textarea-autosize
 ```
