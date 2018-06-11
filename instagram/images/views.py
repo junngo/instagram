@@ -33,7 +33,7 @@ class Images(APIView):
 
         print(sortred_list)
 
-        serializer = serializers.ImageSerializer(sortred_list, many=True)
+        serializer = serializers.ImageSerializer(sortred_list, many=True, context={'request': request})
 
         return Response(serializer.data)
 
@@ -218,7 +218,7 @@ class ImageDetail(APIView):
         except models.Image.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
 
-        serializer = serializers.ImageSerializer(image)
+        serializer = serializers.ImageSerializer(image, context={'request': request})
 
         return Response(data=serializer.data, status=status.HTTP_200_OK)
 
