@@ -24,7 +24,7 @@ const FeedPhoto = (props, context) => {
       <div className={styles.meta}>
         <PhotoActions
           number={props.like_count}
-          isLiked={props.is_liked} 
+          isLiked={props.is_liked}
           photoId={props.id}
         />
         <PhotoComments
@@ -33,7 +33,7 @@ const FeedPhoto = (props, context) => {
           comments={props.comments}
         />
         <TimeStamp time={props.natural_time} />
-        <CommentBox />
+        <CommentBox photoId={props.id}/>
       </div>
     </div>
   );
