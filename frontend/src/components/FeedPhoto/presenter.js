@@ -41,6 +41,7 @@ const FeedPhoto = (props, context) => {
           <UserList
             title="Likes"
             closeLikes={props.closeLikes}
+            userList={props.likes}
           />
         }
     </div>
@@ -48,6 +49,7 @@ const FeedPhoto = (props, context) => {
 };
 
 FeedPhoto.propTypes = {
+  id: PropTypes.number.isRequired,
   creator: PropTypes.shape({
     profile_image: PropTypes.string,
     username: PropTypes.string.isRequired
@@ -69,7 +71,14 @@ FeedPhoto.propTypes = {
   is_liked: PropTypes.bool.isRequired,
   seeingLikes: PropTypes.bool.isRequired,
   closeLikes: PropTypes.func.is_liked,
-  openLikes: PropTypes.func.isRequired
+  openLikes: PropTypes.func.isRequired,
+  likes: PropTypes.arrayOf(
+    PropTypes.shape({
+      profile_image: PropTypes.string,
+      username: PropTypes.string.isRequired,
+      name: PropTypes.string
+    }).isRequired
+  )
 };
 
 export default FeedPhoto;
