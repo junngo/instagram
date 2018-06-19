@@ -22,9 +22,7 @@ class Container extends Component {
     this.setState({
       seeingLikes: true
     });
-    if(!likes){
-      getPhotoLikes();
-    }
+    getPhotoLikes();
   };
 
   _closeLikes = () => {
