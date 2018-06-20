@@ -18,7 +18,7 @@ class Container extends Component {
   }
 
   _openLikes = () => {
-    const { getPhotoLikes, likes } = this.props;
+    const { getPhotoLikes } = this.props;
     this.setState({
       seeingLikes: true
     });
