@@ -1,0 +1,11 @@
+.explore {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: $max-card-width;
+  margin: 0 auto;
+  align-items: center;
+  background-color: white;
+  @include boxBorder(yes);
+}
