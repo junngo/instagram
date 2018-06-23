@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./styles.scss";
 
-const UserRow = (props, context) => (
-  <div className={styles.container}>
+const UserDisplay = (props, context) => (
+  <div className={props.horizontal ? styles.horizontal : styles.vertical}>
     <div className={styles.column}>
       <img
         src={props.profile_image || require("images/noPhoto.jpg")}
@@ -23,7 +23,7 @@ const UserRow = (props, context) => (
   </div>
 );
 
-UserRow.propTypes = {
+UserDisplay.propTypes = {
   user: PropTypes.shape({
     id: PropTypes.number.isRequired,
     profile_image: PropTypes.string,
@@ -32,11 +32,9 @@ UserRow.propTypes = {
     following: PropTypes.bool.isRequired
   }).isRequired,
   big: PropTypes.bool,
-  handleClick: PropTypes.func.isRequired
+  handleClick: PropTypes.func.isRequired,
+  horizontal: PropTypes.bool,
+  vertical: PropTypes.bool
 };
 
-UserRow.defaultProps = {
-  big: false
-};
-
-export default UserRow;
+export default UserDisplay;
