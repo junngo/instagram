@@ -4,7 +4,7 @@ This project is cloning instagram project.
 
 ## Technical Stack
 - Backend : Django(Python)
-- Fontend : React(JavaScript)
+- Frontend : React(JavaScript)
 - DB : Postgres
 - [Required Package](./EnvironmentSetting.md)
 
