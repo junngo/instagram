@@ -7,7 +7,7 @@ url = "https://pypi.python.org/simple"
 
 [packages]
 
-django = "==2.0.2"
+django = "==2.2.10"
 django-environ = "==0.4.4"
 django-crispy-forms = "==1.7.1"
 django-model-utils = "==3.1.1"
