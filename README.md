@@ -15,3 +15,7 @@ This project is cloning instagram project.
 - Comment
 - Show User Profile
 - Feed(Show Images)
+
+## URL(Deploy using elastic beanstalk)
+http://honey-lang.ap-northeast-2.elasticbeanstalk.com/
+
